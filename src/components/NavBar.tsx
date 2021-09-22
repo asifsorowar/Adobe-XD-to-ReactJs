@@ -32,7 +32,7 @@ const NavBar = ({ scrolled }: Scrolled) => {
             <img src={basePath + "/images/logo_03.png"} alt="" />
           </a>
         )}
-        <ul className="hidden md:inline-flex lg:inline-flex">
+        <ul className="hidden lg:inline-flex">
           <li>
             <a className="cursor-pointer">Home</a>
           </li>
@@ -41,30 +41,24 @@ const NavBar = ({ scrolled }: Scrolled) => {
           </li>
         </ul>
         {!scrolled && (
-          <ButtonWhite label="hire me" className="hidden md:block lg:block " />
+          <ButtonWhite label="hire me" className="hidden lg:block " />
         )}
         {scrolled && (
-          <ButtonGradient
-            label="hire me"
-            className="hidden md:block lg:block"
-          />
+          <ButtonGradient label="hire me" className="hidden lg:block" />
         )}
         {scrolled && (
-          <a className="block md:hidden lg:hidden" onClick={handleToggle}>
+          <a className="block lg:hidden" onClick={handleToggle}>
             <img src={basePath + "/images/toggle.png"} alt="" />
           </a>
         )}
         {!scrolled && (
-          <a className="block md:hidden lg:hidden" onClick={handleToggle}>
+          <a className="block lg:hidden" onClick={handleToggle}>
             <img src={basePath + "/images/toggle_white.png"} alt="" />
           </a>
         )}
 
         {isMenu && (
-          <div
-            className="mobile-menu bg-white block md:hidden lg:hidden"
-            id="mobile-nav"
-          >
+          <div className="mobile-menu bg-white block lg:hidden" id="mobile-nav">
             <div className="flex justify-between items-center border-b-2 px-6 py-3">
               <a className="logo">
                 <img src={basePath + "/images/logo_03.png"} alt="" />

@@ -5,6 +5,7 @@ nav {
   align-items: center;
   width: 100%;
   transition: 0.5s;
+  z-index: 999;
   border-bottom: solid rgba(255, 255, 255, 0.2) 0.5px;
   font-family: "SFProDisplay";
 }
